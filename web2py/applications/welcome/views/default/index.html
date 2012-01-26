@@ -4,15 +4,13 @@
 {{if 'message' in globals():}}
 <h3>{{=message}}</h3>
 
-<h4/>{{=T('How did you get here?')}}</h4>
+<h4/>{{=T('What is this?')}}</h4>
 <ol>
-  <li>{{=T('You are successfully running web2py')}}</li>
-  <li>{{=T('You visited the url')}} {{=A(request.env.path_info,_href=request.env.path_info)}}</li>
-  <li>{{=T('Which called the function')}} {{=A(request.function+'()',_href='#')}} {{=T('located in the file')}}
-    {{=A('web2py/applications/%(application)s/controllers/%(controller)s.py'%request,_href=URL('admin','default','peek',args=(request.application,'controllers',request.controller+'.py')))}}</li>
-  <li>{{=T('The output of the file is a dictionary that was rendered by the view')}}
-    {{=A('web2py/applications/%(application)s/views/%(controller)s/index.html'%request,_href=URL('admin','default','peek',args=(request.application,'views',request.controller,'index.html')))}}</li>
-  <li>{{=T('You can modify this application and adapt it to your needs')}}</li>
+  <li>{{=T('This is a Starcraft 2 Custom Tournament Tracker')}}</li>
+  <li>{{=T('You can register an account and create tournaments')}}</li>
+  <li>{{=T('The games will be verified via replay uploads')}}</li>
+  <li>{{=A(T('Tournament'), _href=URL('tournament', 'index'))}}</li>
+  <li>{{=A(T('View League'), _href=URL('league', 'index'))}}</li>
 </ul>
 </ol>
 {{else:}}
@@ -29,4 +27,3 @@
   <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
 </ul>
 {{end}}
-

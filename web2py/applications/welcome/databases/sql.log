@@ -1,4 +1,4 @@
-timestamp: 2012-01-24T11:57:33.851000
+timestamp: 2012-01-25T19:44:35.556000
 CREATE TABLE auth_user(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name CHAR(128),
@@ -10,21 +10,21 @@ CREATE TABLE auth_user(
     registration_id CHAR(512)
 );
 success!
-timestamp: 2012-01-24T11:57:33.857000
+timestamp: 2012-01-25T19:44:35.563000
 CREATE TABLE auth_group(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role CHAR(512),
     description TEXT
 );
 success!
-timestamp: 2012-01-24T11:57:33.863000
+timestamp: 2012-01-25T19:44:35.568000
 CREATE TABLE auth_membership(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user(id) ON DELETE CASCADE,
     group_id INTEGER REFERENCES auth_group(id) ON DELETE CASCADE
 );
 success!
-timestamp: 2012-01-24T11:57:33.868000
+timestamp: 2012-01-25T19:44:35.574000
 CREATE TABLE auth_permission(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     group_id INTEGER REFERENCES auth_group(id) ON DELETE CASCADE,
@@ -33,7 +33,7 @@ CREATE TABLE auth_permission(
     record_id INTEGER
 );
 success!
-timestamp: 2012-01-24T11:57:33.874000
+timestamp: 2012-01-25T19:44:35.580000
 CREATE TABLE auth_event(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     time_stamp TIMESTAMP,
@@ -43,7 +43,7 @@ CREATE TABLE auth_event(
     description TEXT
 );
 success!
-timestamp: 2012-01-24T11:57:33.881000
+timestamp: 2012-01-25T19:44:35.586000
 CREATE TABLE auth_cas(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user(id) ON DELETE CASCADE,
@@ -51,5 +51,60 @@ CREATE TABLE auth_cas(
     service CHAR(512),
     ticket CHAR(512),
     renew CHAR(1)
+);
+success!
+timestamp: 2012-01-25T19:45:26.819000
+CREATE TABLE auth_user(
+    id INT IDENTITY PRIMARY KEY,
+    first_name VARCHAR(128) NULL,
+    last_name VARCHAR(128) NULL,
+    email VARCHAR(512) NULL,
+    password VARCHAR(512) NULL,
+    registration_key VARCHAR(512) NULL,
+    reset_password_key VARCHAR(512) NULL,
+    registration_id VARCHAR(512) NULL
+);
+success!
+timestamp: 2012-01-25T19:45:27.025000
+CREATE TABLE auth_group(
+    id INT IDENTITY PRIMARY KEY,
+    role VARCHAR(512) NULL,
+    description TEXT NULL
+);
+success!
+timestamp: 2012-01-25T19:45:27.054000
+CREATE TABLE auth_membership(
+    id INT IDENTITY PRIMARY KEY,
+    user_id INT NULL, CONSTRAINT auth_membership_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    group_id INT NULL, CONSTRAINT auth_membership_group_id__constraint FOREIGN KEY (group_id) REFERENCES auth_group(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2012-01-25T19:45:27.088000
+CREATE TABLE auth_permission(
+    id INT IDENTITY PRIMARY KEY,
+    group_id INT NULL, CONSTRAINT auth_permission_group_id__constraint FOREIGN KEY (group_id) REFERENCES auth_group(id) ON DELETE CASCADE,
+    name VARCHAR(512) NULL,
+    table_name VARCHAR(512) NULL,
+    record_id INT NULL
+);
+success!
+timestamp: 2012-01-25T19:45:27.122000
+CREATE TABLE auth_event(
+    id INT IDENTITY PRIMARY KEY,
+    time_stamp DATETIME NULL,
+    client_ip VARCHAR(512) NULL,
+    user_id INT NULL, CONSTRAINT auth_event_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    origin VARCHAR(512) NULL,
+    description TEXT NULL
+);
+success!
+timestamp: 2012-01-25T19:45:27.165000
+CREATE TABLE auth_cas(
+    id INT IDENTITY PRIMARY KEY,
+    user_id INT NULL, CONSTRAINT auth_cas_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on DATETIME NULL,
+    service VARCHAR(512) NULL,
+    ticket VARCHAR(512) NULL,
+    renew BIT NULL
 );
 success!

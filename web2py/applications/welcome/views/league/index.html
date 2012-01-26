@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h1>Leagues</h1>
+<table>
+<tr><td>League Name</td><td>League ID</td></tr>
+{{for row in league:}}<tr><td>{{=row[0]}}</td><td>{{=row[1]}}</td></tr></li>{{pass}}
+</table>
