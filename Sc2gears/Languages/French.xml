@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?><language subversion="1" translatorFirstName="Romain" translatorLastName="Salvin" version="1.51">
+<dateFormat>yyyy-MM-dd</dateFormat>
+<timeFormat>HH:mm:ss</timeFormat>
+<dateTimeFormat>yyyy-MM-dd HH:mm:ss</dateTimeFormat>
+<personNameFormat>firstName lastName</personNameFormat>
+<g k="translationTool">
+<g k="tab.texts"/>
+<g k="tab.generalInfo"/>
+</g>
+<g k="button">
+<t k="close">_Fermer</t>
+<t k="cancel">_Annuler</t>
+<t k="yes">_Oui</t>
+<t k="ok">_OK</t>
+<t k="no">_Non</t>
+</g>
+<g k="overlayCharts"/>
+<g k="mousePracticeGame"/>
+<g k="diagnosticTool">
+<g k="test"/>
+</g>
+<g k="menu">
+<g k="window">
+<t k="cascadeAllWindows">_Cascade de toutes les fenêtres</t>
+<t k="fullscreen">_Plein écran</t>
+<t k="tileVisibleWindows">Ju_xtaposer toutes les fenêtres visibles</t>
+<t k="tileAllWindows">_Juxtaposer toutes les fenêtres</t>
+<t k="mimimizeToTray">_Réduire dans la barre des tâches</t>
+<t k="cascadeVisibleWindows">C_ascade de toutes les fenêtres visibles</t>
+<t k="useVerticalTileStrategy">Juxtaposer verticalement de préférence</t>
+<t k="minimizeAll">Tout _minimiser</t>
+<t k="closeAll">Tout _fermer</t>
+</g>
+<g k="help">
+<t k="viewSystemMessages">Lire les messages système</t>
+<t k="visitHomePage">_Site officiel</t>
+<t k="viewVersionHistory">_Voir l'historique des versions</t>
+<t k="visitForum">Visiter le _forum</t>
+<t k="about">_À propos de $0</t>
+<t k="viewFaq">Voir la FA_Q</t>
+<t k="checkUpdates">Vérifier les _mises à jour</t>
+</g>
+<g k="navigation">
+<t k="expandAll">Tout _développer</t>
+<t k="showNavbar">_Afficher la barre de navigation</t>
+<t k="navbarPosition">_Position de la barre de navigation</t>
+<t k="useSmallFont">_Utiliser des petites polices</t>
+<t k="collapseAll">Tout _réduire</t>
+<t k="navbarPosition.left">_Gauche</t>
+<t k="refreshTree">_Rafraichir l'arborescence</t>
+<t k="navbarPosition.right">_Droite</t>
+</g>
+<g k="tools"/>
+<g k="settings">
+<t k="enableReplayAutoSave">A_ctiver l'auto-sauvegarde des replays</t>
+<t k="language">_Langage (nécessite de redémarrer)</t>
+<t k="checkUpdatesOnStartup">_Vérifier les mises à jour au démarrage</t>
+<t k="laf">_Apparence</t>
+<t k="saveOnExit">Sauvegarder les options lors de la _fermeture de l'application</t>
+<t k="saveNow">_Sauvegarder les options</t>
+</g>
+<g k="file">
+<t k="recentReplays">_Récemment ouverts</t>
+<t k="openLastReplay">Ouvrir le _dernier replay</t>
+<t k="openReplay">_Ouvrir un replay...</t>
+<t k="exit">_Quitter</t>
+</g>
+<t k="file">_Fichier</t>
+<t k="navigation">_Navigation</t>
+<t k="window">_Fenêtre</t>
+<t k="settings">_Options</t>
+<t k="help">_Aide</t>
+</g>
+<g k="sc2">
+<g k="gameType">
+<t k="singlePlayer">Solo</t>
+<t k="public">Publique</t>
+<t k="amm">Ladder</t>
+<t k="private">Privée</t>
+</g>
+<g k="unitTier"/>
+<g k="difficulty">
+<t k="medium">Moyen</t>
+<t k="veryEasy">Très facile</t>
+<t k="easy">Facile</t>
+<t k="hard">Difficile</t>
+<t k="insane">Dément</t>
+<t k="veryHard">Très difficile</t>
+</g>
+<g k="gateway">
+<t k="southeastAsia">Asie du sud-est</t>
+<t k="europe">Europe</t>
+<t k="asia">Asie</t>
+<t k="america">Amérique</t>
+</g>
+<g k="gameSpeed">
+<t k="fast">Rapide</t>
+<t k="faster">Plus Rapide</t>
+<t k="normal">Normal</t>
+<t k="slower">Plus lent</t>
+<t k="slow">Lent</t>
+</g>
+<g k="color">
+<t k="yellow">Jaune</t>
+<t k="blue">Bleu</t>
+<t k="orange">Orange</t>
+<t k="pink">Rose clair</t>
+<t k="teal">Turquoise</t>
+<t k="green">Vert</t>
+<t k="red">Rouge</t>
+<t k="purple">Violet</t>
+</g>
+<g k="playerType">
+<t k="human">Humain</t>
+<t k="computer">Ordinateur</t>
+</g>
+<g k="region"/>
+<g k="actionType">
+<t k="other">Autre</t>
+<t k="inaction">Inaction</t>
+<t k="research">Recherches</t>
+<t k="train">Unitées crées</t>
+<t k="upgrade">Améliorations</t>
+<t k="build">Bâtiments</t>
+<t k="select">Sélection</t>
+</g>
+<g k="matchResult"/>
+<g k="race">
+<t k="random.letter">R</t>
+<t k="zerg">Zerg</t>
+<t k="terran.letter">T</t>
+<t k="random">Aléatoire</t>
+<t k="protoss">Protoss</t>
+<t k="zerg.letter">Z</t>
+<t k="terran">Terran</t>
+<t k="protoss.letter">P</t>
+<t k="any.letter">*</t>
+</g>
+</g>
+<g k="pluginManager">
+<g k="details"/>
+<g k="status"/>
+</g>
+<g k="fileChooser">
+<t k="lookInLabel">Parcourir:</t>
+<t k="helpButtonToolTip">Aide pour le sélectionneur de fichier</t>
+<t k="saveDialogTitle">Sauvegarder</t>
+<t k="sc2ReplaySources">Sources SC2 Replay (*.sc2repsrc)</t>
+<t k="newFolderToolTip">Créer un nouveau dossier</t>
+<t k="acceptAllFileFilter">Tous les fichiers (*.*)</t>
+<t k="cancelButtonToolTip">Quitter la fenêtre du sélectionneur de fichier</t>
+<t k="sc2ReplayFiles">Fichiers SC2 Replay (*.SC2Replay)</t>
+<t k="detailsViewButtonToolTip">Détails</t>
+<t k="homeFolderToolTip">Bureau</t>
+<t k="saveButtonToolTip">Sauvegarder le fichier sélectionné</t>
+<t k="updateButtonToolTip">Actualiser la liste des répertoires</t>
+<t k="listViewButtonToolTip">Liste</t>
+<t k="helpButton">Aide</t>
+<t k="zipFiles">Fichiers Zip (*.zip)</t>
+<t k="openButton">Ouvrir</t>
+<t k="cancelButton">Annuler</t>
+<t k="filesOfTypeLabel">Type de fichier:</t>
+<t k="openButtonToolTip">Ouvrir le fichier sélectionné</t>
+<t k="upFolderToolTip">Remonter d'un dossier</t>
+<t k="openDialogTitle">Ouvrir</t>
+<t k="updateButton">Actualiser</t>
+<t k="sc2ReplayLists">Listes SC2 Replay (*.csv)</t>
+<t k="saveButton">Sauvegarder</t>
+<t k="failedToParseRepaly">Échec de la lecture du replay!</t>
+<t k="fileNameLabel">Nom du fichier:</t>
+</g>
+<g k="importBuildOrders"/>
+<g k="findDuplicates"/>
+<g k="newToSc2gears"/>
+<g k="colorChooser"/>
+<g k="gameTimeRealTimeConverter"/>
+<g k="mySharedReplays">
+<g k="header"/>
+</g>
+<g k="gridSettings">
+<g k="autoConfigure"/>
+</g>
+<g k="module">
+<g k="repSearch">
+<g k="tab">
+<g k="filters">
+<g k="name">
+<t k="gateway">Portail:</t>
+<t k="mapName">Nom de la carte:</t>
+<t k="playerName">Nom du joueur:</t>
+<t k="fileName">Nom du fichier:</t>
+<t k="upgrade">Amélioration:</t>
+<t k="buildOrderAnyBuilding">tous les bâtiments</t>
+<t k="gameLength">Durée de la partie:</t>
+<t k="building">Bâtiment:</t>
+<t k="chatMessage">Discussion des joueurs:</t>
+<t k="unitAbility">Capacité d'unité:</t>
+<t k="matchupToolTip">Entrer l'initiale des races recherchées. Symboles: $0 - $1, $2 - $3, $4 - $5, $6 - $7, * pour n'importe quelle race, v - pour séparer les équipes. Exemples: $8</t>
+<t k="raceMatchup">Races jouées:</t>
+<t k="buildingAbility">Capacité de bâtiment:</t>
+<t k="buildOrder">Build order:</t>
+<t k="dateToolTip">Entrer soit une date soit un format du type date+heure. Exemple: $0 or $1</t>
+<t k="gameType">Type de partie:</t>
+<t k="research">Recherche:</t>
+<t k="unit">Unité:</t>
+<t k="version">Version:</t>
+<t k="buildOrderAddToolTip">Ajoute le bâtiment sélectionné au build order.</t>
+<t k="date">Date:</t>
+<t k="buildOrderTextToolTip">Entrer une liste de bâtiments, séparés par des virgules (non sensible à la casse). Utiliser l'astérisque pour rechercher n'importe quel bâtiment.</t>
+<t k="format">Format:</t>
+<t k="playerNameToolTip">Il est possible d'entrer une liste de noms, séparés par une virgule, dans laquelle chaque nom doit être dans un replay.</t>
+<t k="minOccurrenceText">Quantité min.:</t>
+</g>
+<t k="performSearchButton">_Rechercher</t>
+<t k="min">Min:</t>
+<t k="title">Filtres de recherche</t>
+<t k="timeFormatToolTip">Format: secondes ou min:sec ou heure:min:sec</t>
+<t k="invalidFieldsError">Les champs marqués contiennent des valeurs invalides!</t>
+<t k="addNewFieldToolTip">Ajouter un champ</t>
+<t k="max">Max:</t>
+<t k="removeFieldToolTip">Supprimer un champ</t>
+<t k="resetFieldsButton">_Réinitialiser les champs</t>
+<t k="exactMatch">Correspondance exacte</t>
+</g>
+<g k="results">
+<g k="header">
+<t k="map">Carte</t>
+<t k="players">Joueurs</t>
+<t k="comment">Commentaire</t>
+<t k="fileDate">Date du fichier</t>
+<t k="file">Fichier</t>
+<t k="gateway">Portail</t>
+<t k="length">Durée</t>
+<t k="version">Version</t>
+<t k="type">Type</t>
+<t k="raceMatchup">Races jouées</t>
+</g>
+<t k="searchStatus">Trouvés: $0, recherchés: $1, omis: $2, total: $3 ($4%)</t>
+<t k="loadButton">_Charger la liste...</t>
+<t k="abortButton">_Arrêter la recherche</t>
+<t k="removeSelectedMenuItem">Retirer la sélection</t>
+<t k="selectLoadReplayList">Sélectionnez une liste de replay à charger</t>
+<t k="saveButton">Sau_vegarder la liste...</t>
+<t k="title">Resultats #$0</t>
+<t k="multiRepAnalysisToolTip">Ouvre tous les replays pour une analyse multi-replay</t>
+<t k="countingReplays">Comptage des replays...</t>
+<t k="repListSaved">Liste de replay sauvegardée avec succès.</t>
+<t k="loadResult">$0 replay(s) ont été chargés.</t>
+<t k="loadingReplayList">Chargement de la liste de replay: $0</t>
+<t k="multiRepAnalysisButton">Analyse multi-replay</t>
+<t k="failedToLoadRepList">Échec : impossible de charger la liste de replay!</t>
+<t k="failedToSaveRepList">Échec : impossible de sauvegarder la liste de replay!</t>
+<t k="setAsSourceButton">Ajouter en source</t>
+<t k="stretchToWindow">Ajuster à la taille de la fenêtre</t>
+<t k="setSelectedAsSourceMenuItem">Ajouter en source</t>
+<t k="setAsSourceToolTip">Ajoute tous les replays en tant que source pour les recherches futures.</t>
+<t k="searchAborted">Recherche interrompue!</t>
+<t k="selectSaveReplayList">Sélectionnez une liste de replay à sauvegarder</t>
+</g>
+<g k="source">
+<t k="sortButton">Trier</t>
+<t k="repSourceSaved">Source de replay sauvegardée avec succès.</t>
+<t k="autoSort">Trier automatiquement</t>
+<t k="purgeButton">_Purger</t>
+<t k="addFoldersButton">Ajouter des _dossiers...</t>
+<t k="removeSelectedButton">Supp_rimer la sélection</t>
+<t k="addFilesButton">Ajouter des _fichiers...</t>
+<t k="saveReplaySourceButton">Sauvegarder en source de replays...</t>
+<t k="purgeButtonToopTip">Retire les doublons, les sources inexistantes et les sources qui sont comprises dans d'autres sources.</t>
+<t k="selectReplaysToAdd">Selectionnez les replays à ajouter</t>
+<t k="selectFoldersToAdd">Sélectionnez les dossiers à ajouter</t>
+<t k="listAllReplays">Faire une lis_te de tous les replays de cette source</t>
+<t k="title">Recherche de sources</t>
+<t k="loadReplaySourceButton">Charger une source de replays...</t>
+<t k="failedToSaveRepSource">Échec : impossible de sauvegarder la source de replay!</t>
+<t k="failedToLoadRepSource">Échec : impossible de charger la source de replay!</t>
+<t k="selectSaveReplaySource">Selectionnez une source de replay à sauvegarder</t>
+<t k="selectLoadReplaySource">Selectionnez une source de replay à charger</t>
+</g>
+</g>
+<t k="name">Rechercher un replay</t>
+<t k="title">Recherche de replay #$0</t>
+</g>
+<g k="multiRepAnal">
+<g k="tab">
+<g k="maps">
+<g k="header">
+<t k="1v1ZWinRatio">1v1 Z, % de victoires</t>
+<t k="firstPlayed">Première fois</t>
+<t k="lastPlayed">Dernière fois</t>
+<t k="replays">Replays</t>
+<t k="1v1TWinRatio">1v1 T, % de victoires </t>
+<t k="1v1PWinRatio">1v1 P, % de victoires</t>
+<t k="mapName">Nom de la carte</t>
+<t k="replaysRatio">% des replays</t>
+</g>
+<t k="info">Total cartes: $0</t>
+<t k="title">Cartes</t>
+</g>
+<g k="chatWords"/>
+<g k="players">
+<g k="header">
+<t k="lastGame">Dernière partie</t>
+<t k="firstGame">Première partie</t>
+<t k="replays">Replays</t>
+<t k="record">Historique Vic-Def-Inc</t>
+<t k="presence">Présence (jours)</t>
+<t k="avgApm">APM moyen</t>
+<t k="totalTimeInGames">Temps total joué</t>
+<t k="playerName">Nom du joueur</t>
+<t k="avgGameLength">Durée moyenne</t>
+<t k="raceDistribution">Races (%)</t>
+<t k="winRatio">Victoires (%)</t>
+<t k="avgGamesPerDay">Moy. parties/jour</t>
+</g>
+<t k="info">Total joueurs: $0. Astuce: double-cliquer sur un joueur pour afficher des statistiques détaillées et des graphiques de progression sur la durée.</t>
+<t k="title">Joueurs</t>
+</g>
+<g k="player">
+<g k="tab">
+<g k="playmates">
+<g k="header">
+<t k="lastCommonGame">Dernière partie ensemble</t>
+<t k="firstCommonGame">Première partie ensemble</t>
+<t k="winRatioAsOpponents">% de Victoires VS</t>
+<t k="recordAsOpponents">Historique VS</t>
+<t k="gamesAsOpponents">Parties VS</t>
+<t k="winRatioAsAllies">% de Victoires Avec</t>
+<t k="gamesAsAllies">Parties avec</t>
+<t k="recordAsAllies">Historique Avec</t>
+<t k="commonGames">Parties ensemble</t>
+<t k="totalTimeTogether">Temps total joué</t>
+<t k="playmate">Coéquipier</t>
+</g>
+<t k="title">Coéquipiers</t>
+</g>
+<g k="trends"/>
+<g k="charts">
+<g k="chartType">
+<t k="activity.yAxisLabel">Parties/$0</t>
+<t k="winRatioDevelopment.yAxisLabel">% de victoires</t>
+<t k="apmDevelopment.yAxisLabel">Moyenne pondérée de l'APM</t>
+<t k="winRatioDevelopment">Évolution du ratio de victoire</t>
+<t k="raceDistribution">Répartition des races sur la durée</t>
+<t k="apmDevelopment">Progression de l'APM</t>
+<t k="activity">Activité</t>
+</g>
+<g k="granularity">
+<t k="month">Mois</t>
+<t k="week">Semaine</t>
+<t k="day">Jour</t>
+<t k="year">Année</t>
+</g>
+<t k="title">Graphiques de progression</t>
+<t k="granularity">Granularité:</t>
+<t k="averageMarker">Moyenne: $0</t>
+</g>
+<t k="formatRecords.header.format">Format</t>
+<t k="formatRecords.title">Historique par format de partie</t>
+</g>
+<t k="info">Analyse du joueur $0 basée sur $1 replays:</t>
+</g>
+<g k="buildOrders"/>
+<g k="1v1BuildOrders.header">
+<t k="occurrences">Occurrences</t>
+<t k="record">Historique Vic-Def-Inc</t>
+<t k="winRatio">% de victoires</t>
+<t k="race">Race</t>
+<t k="lastUsed">Dernière fois</t>
+<t k="buildOrder">Build order</t>
+<t k="firstUsed">Première fois</t>
+</g>
+</g>
+<t k="analysisStatus">Analysés: $0, omis: $1, total: $2 ($3%)</t>
+<t k="abortAnalysisButton">_Arrêter l'analyse</t>
+<t k="stretchToWindow">Ajuster à la taille de la fenêtre</t>
+<t k="analysisAborted">Analyse interrompue!</t>
+<t k="name">Analyse multi-replay</t>
+<t k="countingReplays">Comptage des replays...</t>
+<t k="openTitle">Sélectionner les fichiers et dossiers à analyser</t>
+<t k="title">Analyse multi-replay #$0</t>
+<t k="opening">Ouverture...</t>
+</g>
+<g k="startPage">
+<g k="tip"/>
+<g k="channel"/>
+</g>
+<g k="repAnalyzer">
+<g k="tab">
+<g k="mapPreview">
+<t k="mapFileNotExists">Le ficher de la carte n'existe pas.</t>
+<t k="mapDownloaded">Carte téléchargée!</t>
+<t k="reopenReplayButton">_Rouvrir le replay</t>
+<t k="downloadMapButton">_Télécharger la carte</t>
+<t k="title">Aperçu de la carte</t>
+<t k="mapDownloadFailed">Échec du téléchargement de la carte!</t>
+<t k="downloadingMap">Téléchargement de la carte...</t>
+<t k="downloadFromGateway">Télécharger depuis le portail:</t>
+<t k="zoom">Zoom:</t>
+<t k="previewNotAvailable">Aucun aperçu de la carte n'est disponible.</t>
+</g>
+<g k="charts">
+<g k="chartText">
+<t k="upgrades">améliorations: $0</t>
+<t k="hotkeysAssign">assignements de raccourcis: $0</t>
+<t k="researches">recherches: $0</t>
+<t k="assign">assignements: $0</t>
+<t k="hotkeys">raccourcis: $0</t>
+<t k="trains">unités entrainées: $0</t>
+<t k="select">sélections: $0</t>
+<t k="actions">actions: $0</t>
+<t k="mapViewZoomTip">Astuce: zoomez et déplacez la vue avec la souris!</t>
+<t k="apm">APM: $0</t>
+<t k="workers">ouvriers: $0</t>
+<t k="builds">bâtiments construits: $0</t>
+<t k="team">ÉQUIPE $0</t>
+<t k="mapViewChartNotAvailable2">Utilisez l'onglet Aperçu de la carte afin de télécharger celle-ci.</t>
+<t k="mapViewChartNotAvailable1">Ce graphique nécessite le fichier de la carte, mais celui-ci n'a pas été trouvé.</t>
+</g>
+<g k="animate"/>
+<g k="actions">
+<g k="iconSize">
+<t k="medium">Moyennes</t>
+<t k="big">Grandes</t>
+<t k="small">Petites</t>
+<t k="hidden">Cachées</t>
+</g>
+<t k="invertColors">Inverser les couleurs</t>
+<t k="iconSizes">Taille des icônes:</t>
+<t k="listedActionsCount">Nombre d'actions listées: $0</t>
+<t k="useListedActionsAsInput">Utiliser les actions listées en tant que données d'entrée du graphique</t>
+</g>
+<g k="buildsTechStat">
+<t k="barSize">Taille des barres:</t>
+<t k="showUnits">Unités</t>
+<t k="showBuildings">Bâtiments</t>
+<t k="showUpgrades">Améliorations</t>
+<t k="showResearches">Recherches</t>
+<t k="showAbilityGroups">Afficher les groupes de capacités</t>
+</g>
+<g k="playerMenu"/>
+<g k="players">
+<g k="league"/>
+<g k="portraitToolTip"/>
+<t k="winnerToolTip">Ce joueur a gagné cette partie.</t>
+<t k="handicapToolTip">Ce joueur a joué avec un handicap de=$0.</t>
+</g>
+<g k="mapView">
+<g k="background"/>
+<t k="hideOverlappedBuildings">Masquer les bâtiments imbriqués</t>
+<t k="fillBuildingIcons">Masquer les icônes des bâtiments</t>
+</g>
+<g k="chartType">
+<t k="buildsTech">Builds/Tech</t>
+<t k="buildsTechStat">Builds/Tech Stats</t>
+<t k="apm">APM</t>
+<t k="hotkeys">Raccourcis</t>
+<t k="mapView">Vue de la carte</t>
+</g>
+<g k="buildsTech">
+<t k="showTrains">Unités</t>
+<t k="showUpgrades">Améliorations</t>
+<t k="showWorkers">Dont ouvriers</t>
+<t k="showResearches">Recherches</t>
+<t k="showBuilds">Bâtiments</t>
+</g>
+<g k="actionOps">
+<t k="clearFiltersButton">_Réinitialiser les filtres</t>
+<t k="filterActions">Filtrer les actions:</t>
+<t k="filterOutActionsToolTip">Saisir des mots pour qu'ils n'apparaissent PAS dans la liste d'actions. Il est possible d'utiliser OR (= ou) entre les mots. (CTRL+T)</t>
+<t k="filterOutActions">Ignorer les actions:</t>
+<t k="jumpToFrame">Aller à l'image:</t>
+<t k="filterActionsToolTip">Saisir des mots pour qu'ils apparaissent dans la liste actions. Il est possible d'utiliser OR (= ou) entre les mots. (CTRL+F)</t>
+<t k="searchText">Recherche de texte:</t>
+<t k="searchTextToolTip">CTRL+S</t>
+<t k="jumpToFrameToolTip">CTRL+J</t>
+</g>
+<t k="displayInSeconds">En secondes</t>
+<t k="zoomToolTip">Sélectionnez le niveau de zoom. Faites CTRL+I pour un zoom avant, CTRL+U pour un zoom arrière.</t>
+<t k="allPlayersOn1Chart">Tous sur un graphique</t>
+<t k="displayInSecondsToolTip">Affiche le temps en secondes plutôt qu'en images.</t>
+<t k="hotkeys.showSelectHotkeys">Afficher les sélections de raccourcis</t>
+<t k="usePlayersColorsToolTip">Le graphique utilise la couleur assignée aux joueurs pendant la partie.</t>
+<t k="groupByTeams">Par équipe</t>
+<t k="allPlayersOn1ChartToolTip">Affiche tous les joueurs sur le même graphique.</t>
+<t k="groupByTeamToolTip">Affiche un graphique par équipe pour lequel les données des joueurs sont mises en commun.</t>
+<t k="usePlayersColors">Afficher la couleur des joueurs</t>
+<t k="chartTooltip.frameTime">Image: $0, Temps: $1</t>
+<t k="displayActionTypes">Afficher le type d'action:</t>
+<t k="apm.pixels">pixels.</t>
+<t k="zoom">Zoom:</t>
+<t k="players">Joueurs:</t>
+<t k="title">Graphiques</t>
+</g>
+<g k="inGameChat">
+<t k="chatMessageFull">$0 - $1 à $2: $3</t>
+<t k="blinkMessage">$0 - $1 a épinglé la position: x=$2,y=$3</t>
+<t k="title">Discussion</t>
+<t k="chatMessageNoTarget">$0 - $1: $2</t>
+<t k="hideMessageTarget">Masquer le destinataire du message</t>
+<t k="showBlinks">Afficher les signalements sur la carte</t>
+<t k="formatIntoParagraphs">Regrouper en paragraphes</t>
+<t k="messageTargetAll">TOUS</t>
+<t k="messageTargetAllies">ALLIÉS</t>
+</g>
+<g k="gameInfo">
+<t k="clients">Joueurs: $0</t>
+<t k="version">Version: $0</t>
+<t k="gateway">Portail: $0</t>
+<t k="players">Joueurs:</t>
+<t k="handicap">Handicap: $0</t>
+<t k="team">Équipe  $0:</t>
+<t k="gameSpeed">Vitesse de la partie: $0</t>
+<t k="mapFile">Fichier de la carte: $0</t>
+<t k="mapSize">Taille de la carte: $0</t>
+<t k="format">Format: $0</t>
+<t k="gameLength">Durée de la partie: $0</t>
+<t k="winners">Gagnants: $0</t>
+<t k="title">Infos de partie</t>
+<t k="date">Date: $0</t>
+<t k="mapName">Nom de la carte: $0</t>
+<t k="mapPlayableSize">Espace jouable: $0</t>
+<t k="gameType">Type de partie: $0</t>
+<t k="fileName">Nom du fichier: $0</t>
+</g>
+</g>
+<t k="opening">Ouverture...</t>
+<t k="openError">Impossible d'ouvrir le replay!</t>
+<t k="openTitle">Sélectionnez un replay</t>
+<t k="name">Analyser un replay</t>
+</g>
+</g>
+<g k="folderSettings">
+<t k="sc2AutoReplay">Dossier d'auto-sauvegarde des replays (en fonction du dossier utilisateur):</t>
+<t k="replayAutoSaveFolder">Sc2gears Dossier d'auto-sauvegarde des replays:</t>
+<t k="chooseFolder">Choisir un dossier...</t>
+<t k="restoreDefaultFolder">Restaurer par défaut</t>
+<t k="sc2Maps">Dossier des cartes de SC2:</t>
+<t k="defaultFolder">Dossier par défaut pour ouvrir un replay:</t>
+<t k="sc2InstallationFolder">Dossier d'installation de SC2:</t>
+</g>
+<g k="replayops">
+<g k="renameDialog">
+<g k="symbol">
+<t k="playerRaceFirstLetter">première lettre de la race du joueur x (x est le numéro du joueur, commence à 1)</t>
+<t k="playerRace">race du joueur x (x est le numéro du joueur, commence à 1)</t>
+<t k="playerName">nom du joueur x (x est le numéro du joueur, commence à 1)</t>
+<t k="dateTime">date et heure du replay</t>
+<t k="name">le nom original</t>
+<t k="format">format (par exemple 2v2)</t>
+<t k="counter">compteur qui commence à 1 et sera incrémenté à chaque utilisation</t>
+<t k="raceMatchup">races jouées (par exemple TZvPP)</t>
+<t k="mapName">nom de la carte</t>
+<t k="extension">extension ('SC2Replay')</t>
+<t k="allPlayerNames">liste des noms de tous les joueurs, séparés par une virgule</t>
+<t k="date">date du replay</t>
+</g>
+<g k="tab"/>
+<t k="failedToRename">Échec : $0 replay(s) n'ont pas pu être renommés.</t>
+<t k="successfullyRenamed">$0 replay(s) ont été renommés avec succès.</t>
+<t k="invalidTemplate">Le modèle entré est invalide!</t>
+<t k="title">Renommer les replays</t>
+<t k="previewButton">Aperçu des _nouveaux noms</t>
+<t k="renameButton">_Renommer les replays</t>
+<t k="description1">Entrez un modèle pour renommer les replays.</t>
+<t k="description2">Vous pouvez entrer n'importe quel texte et utiliser les symboles pour les valeurs dynamiques.</t>
+<t k="description3">Les symboles seront remplacés par la valeur correspondante pour chaque replay.</t>
+<t k="description4">Les symboles suivants peuvent être utilisés:</t>
+</g>
+<t k="openInAnalyzer">Analyser le replay</t>
+<t k="deleteReplays">Supprimer les replays...</t>
+<t k="openReplaysFolder">Ouvrir le dossier du replay</t>
+<t k="includePathInZip">Conserver l'arborescence dans le Zip</t>
+<t k="copyReplays">Copier les replays...</t>
+<t k="moveReplays">Déplacer les replays...</t>
+<t k="selectMoveTargetFolder">Sélectionnez le dossier de destination du déplacement</t>
+<t k="watchReplay">Regarder le replay</t>
+<t k="openInMultiRepAnal">Ouvrir pour une analyse multi-replay</t>
+<t k="selectCopyTargetFolder">Sélectionnez le dossier de destination de la copie</t>
+<t k="packReplays">Archiver les replays (ZIP)...</t>
+<t k="deleteConfirmation">Êtes-vous sûr de vouloir supprimer $0 replay(s)?</t>
+<t k="renameReplays">Renommer les replays...</t>
+<t k="selectFileToPackTo">Sélectionnez le fichier vers lequel archiver</t>
+</g>
+<g k="tsovplugin"/>
+<g k="charts">
+<t k="chartType">Type de graphique:</t>
+<t k="granularity">Granularité:</t>
+<t k="graphApproximation.cubic">cubique</t>
+<t k="graphApproximation">Approximation:</t>
+<t k="graphApproximation.linear">linéaire</t>
+<t k="chartTypeToolTip">Sélectionnez le graphique que vous souhaitez voir. Utilisez CTRL+nombre pour passer de l'un à l'autre rapidement.</t>
+</g>
+<g k="mousePrintRecorder">
+<g k="tab.info"/>
+</g>
+<g k="sc2gearsDatabaseDownloader"/>
+<g k="keyboardShortcuts">
+<g k="function"/>
+<g k="context"/>
+<g k="key"/>
+</g>
+<g k="wordCloud"/>
+<g k="trayIcon">
+<t k="running">$0 est lancé.</t>
+</g>
+<g k="pluginSettings"/>
+<g k="botplugin"/>
+<g k="welcome">
+<t k="selectLanguage">Sélectionnez votre langage ci-dessous.</t>
+<t k="firstRun">C'est le premier lancement de $0.</t>
+<t k="welcome">Bienvenue</t>
+<t k="thankYou">Merci d'avoir choisi $0.</t>
+<t k="language">Langage:</t>
+</g>
+<g k="playerProfile"/>
+<g k="progressDialog">
+<g k="progressBar"/>
+</g>
+<g k="tray">
+<t k="restore">Restaurer la fenêtre principale</t>
+<t k="exit">Quitter</t>
+<t k="hide">Cacher la fenêtre principale</t>
+</g>
+<g k="internalFrame">
+<g k="menu">
+<t k="size">Taille</t>
+<t k="restore">Restaurer</t>
+<t k="move">Déplacer</t>
+<t k="close">Fermer</t>
+<t k="minimize">Réduire</t>
+<t k="maximize">Agrandir</t>
+</g>
+<g k="toolTip">
+<t k="maximize">Maximiser</t>
+<t k="restore">Restaurer</t>
+<t k="close">Fermer</t>
+<t k="minimize">Minimiser</t>
+</g>
+</g>
+<g k="miscSettings">
+<g k="predefinedList"/>
+</g>
+<g k="onTopGameInfo"/>
+<g k="about">
+<t k="currentTranslator">Traduction en français:</t>
+<t k="releasedOn">Réalisée le:</t>
+<t k="version">Version:</t>
+<t k="email">E-mail:</t>
+<t k="languageFileVersion">Version du fichier de langue:</t>
+<t k="usedIcons">$0 utilise les icônes de Fugue et de FamFamFam.</t>
+<t k="author">Auteur:</t>
+<t k="title">À propos de $0</t>
+</g>
+<g k="navigationTree">
+<g k="popup">
+<t k="deleteItem">Supprimer</t>
+</g>
+<t k="repSources.name">Sources de replays</t>
+<t k="repLists.name">Listes de replays</t>
+<t k="info.newRepList">Il est possible de sauvegarder des listes de replays dans l'onglet "Resultats" de la recherche de replay.</t>
+<t k="info.newRepSource">Il est possible de créer et de sauvegarder des sources de replays dans l'onglet "Recherche de sources" de la recherche de replays.</t>
+<t k="new">nouveau</t>
+<t k="empty">vide</t>
+</g>
+<g k="shareReplay">
+<g k="uploadProcess"/>
+</g>
+<g k="replayListColumnSetup"/>
+<g k="general">
+<g k="tableFilter"/>
+<g k="language"/>
+<g k="day"/>
+<g k="month"/>
+<t k="no">non</t>
+<t k="errorDetails">Détails...</t>
+<t k="infoTitle">Info</t>
+<t k="unknown">Inconnu</t>
+<t k="errorTitle">Erreur!</t>
+<t k="confirmationTitle">Confirmation</t>
+<t k="noButton">Non</t>
+<t k="cancelButton">Annuler</t>
+<t k="okButton">OK</t>
+<t k="yes">oui</t>
+<t k="yesButton">Oui</t>
+</g>
+<g k="misc">
+<t k="autorepFolderEmpty">Le dossier d'auto-sauvegarde des replays ne contient aucun replay.</t>
+<t k="autorepFolderNotExists">Le dossier d'auto-sauvegarde des replays n'existe pas.</t>
+</g>
+<g k="updatesAvailable">
+<t k="dontUpdateButton">Ne pas mettre à jour</t>
+<t k="whatToDo">Que souhaitez-vous faire?</t>
+<t k="title">Mises à jour disponibles</t>
+<t k="newVersionAvailable">Une nouvelle version est disponible: $0</t>
+<t k="updateButton">Mettre à jour</t>
+<t k="updaterCannotBeStarted">Le $0 ne peut pas être démarré suite à l'échec de la précédente mise à jour!</t>
+<t k="restart">Redémarrez $0 et réessayez.</t>
+<t k="viewVersionHistory">Voir l'historique des versions</t>
+</g>
+<g k="tips"/>
+<g k="proxyConfig"/>
+<g k="dialog.systemMessages">
+<t k="title">Messages système</t>
+</g>
+<t k="tab.close.toolTip">Fermer l'onglet (CTRL+W)</t>
+</language>
