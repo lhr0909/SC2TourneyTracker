@@ -14,7 +14,7 @@ def index():
     example action using the internationalization operator T and flash
     rendered by views/default/index.html or views/generic.html
     """
-    response.flash = "Welcome to Starcraft 2 Custom Tourney Tracker"
+    #response.flash = "Welcome to Starcraft 2 Custom Tourney Tracker"
     return dict(message=T('Heyo'))
 
 def user():

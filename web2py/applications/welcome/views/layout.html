@@ -96,9 +96,9 @@
             <div class="breadcrumbs">{{=request.function.replace('_', ' ').title()}}</div>
             {{end}}
             <!-- AddToAny BEGIN -->
-            <div style="float:right; padding-top: .25em;" class="a2a_kit a2a_default_style">
+            <!--<div style="float:right; padding-top: .25em;" class="a2a_kit a2a_default_style">
             <a class="a2a_dd" href="http://www.addtoany.com/share_save">Share</a></div>
-            <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+            <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>-->
             <!-- AddToAny END -->
           </div>
         </div>
@@ -142,7 +142,10 @@
       <div class="sixteen columns">
         {{block footer}} <!-- this is default footer -->
         <div class="footer-content clearfix">
-          <div class="copyright">{{=T('Copyright')}} &#169; 2011</div>
+          <div class="copyright">
+			  {{=T('Copyright')}} &#169; 2012 <br />
+			  Kyle Cheung, Simon Liang, Jackson Melling
+		  </div>
           <div style="float: right;">
             <a href="http://www.web2py.com/">
             <img style="padding-bottom: 0;" src="{{=URL('static','images/poweredby.png')}}"/>
