@@ -108,3 +108,58 @@ CREATE TABLE auth_cas(
     renew BIT NULL
 );
 success!
+timestamp: 2012-02-01T20:52:03.103000
+CREATE TABLE auth_user(
+    id INT IDENTITY PRIMARY KEY,
+    first_name VARCHAR(128) NULL,
+    last_name VARCHAR(128) NULL,
+    email VARCHAR(512) NULL,
+    password VARCHAR(512) NULL,
+    registration_key VARCHAR(512) NULL,
+    reset_password_key VARCHAR(512) NULL,
+    registration_id VARCHAR(512) NULL
+);
+success!
+timestamp: 2012-02-01T20:52:03.152000
+CREATE TABLE auth_group(
+    id INT IDENTITY PRIMARY KEY,
+    role VARCHAR(512) NULL,
+    description TEXT NULL
+);
+success!
+timestamp: 2012-02-01T20:52:03.178000
+CREATE TABLE auth_membership(
+    id INT IDENTITY PRIMARY KEY,
+    user_id INT NULL, CONSTRAINT auth_membership_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    group_id INT NULL, CONSTRAINT auth_membership_group_id__constraint FOREIGN KEY (group_id) REFERENCES auth_group(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2012-02-01T20:52:03.204000
+CREATE TABLE auth_permission(
+    id INT IDENTITY PRIMARY KEY,
+    group_id INT NULL, CONSTRAINT auth_permission_group_id__constraint FOREIGN KEY (group_id) REFERENCES auth_group(id) ON DELETE CASCADE,
+    name VARCHAR(512) NULL,
+    table_name VARCHAR(512) NULL,
+    record_id INT NULL
+);
+success!
+timestamp: 2012-02-01T20:52:03.232000
+CREATE TABLE auth_event(
+    id INT IDENTITY PRIMARY KEY,
+    time_stamp DATETIME NULL,
+    client_ip VARCHAR(512) NULL,
+    user_id INT NULL, CONSTRAINT auth_event_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    origin VARCHAR(512) NULL,
+    description TEXT NULL
+);
+success!
+timestamp: 2012-02-01T20:52:03.260000
+CREATE TABLE auth_cas(
+    id INT IDENTITY PRIMARY KEY,
+    user_id INT NULL, CONSTRAINT auth_cas_user_id__constraint FOREIGN KEY (user_id) REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on DATETIME NULL,
+    service VARCHAR(512) NULL,
+    ticket VARCHAR(512) NULL,
+    renew BIT NULL
+);
+success!

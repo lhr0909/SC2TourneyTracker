@@ -11,7 +11,7 @@
 
 if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
-    db = DAL('mssql://cheungkt:mechanes5@whale.cs.rose-hulman.edu/SC2tracker')
+    db = DAL('mssql://cheungkt:mechanes5@whale.cs.rose-hulman.edu/SC2tracker', migrate=False)
 else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
     db = DAL('google:datastore')
@@ -78,3 +78,62 @@ use_janrain(auth,filename='private/janrain.key')
 ## >>> rows=db(db.mytable.myfield=='value').select(db.mytable.ALL)
 ## >>> for row in rows: print row.id, row.myfield
 #########################################################################
+
+
+db.define_table('Player', 
+				Field('CharacterCode', 'smallint'),
+				Field('LeagueID', 'tinyint'),
+				Field('Rank', 'int'),
+				Field('InGameName', 'varchar(50)'),
+				Field('Auth_User_ID', 'int'))
+
+db.define_table('Players_in_Tournament', 
+				Field('PID', 'int'),
+				Field('TID', 'int'))
+
+db.define_table('Game_to_Players', 
+				Field('GID', 'int'),
+				Field('PID', 'int'))
+			
+			
+db.define_table('League',
+				Field('Name', 'varchar(20)'))
+				
+db.define_table('League_Limits',
+				Field('LID', 'tinyint'),
+				Field('TID', 'int'))
+				
+db.define_table('Tournament',
+				Field('Name', 'varchar(20)'),
+				Field('MPID', 'int'),
+				Field('Owner', 'int'))
+				
+db.define_table('Matches_in_Tournament',
+				Field('MID', 'int'),
+				Field('TID', 'int'))
+				
+db.define_table('Match',
+				Field('Type', 'varchar(3)'),
+				Field('Winner', 'int'),
+				Field('Best_of', 'tinyint'),
+				Field('Time_Stamp', 'timestamp'))
+
+db.define_table('Game',
+				Field('Winner', 'int'),
+				Field('MatchID', 'int'),
+				Field('MapID', 'int'),
+				Field('ReplayID', 'int'))
+				
+db.define_table('Replay',
+				Field('FileLocation', 'upload'))
+
+db.define_table('Map_to_Map_Pool',
+				Field('Pool_ID', 'int'),
+				Field('Map_ID', 'int'))
+				
+db.define_table('Map',
+				Field('Name', 'varchar(20)'),
+				Field('Type', 'carchat(3)'))
+				
+db.define_table('Map_Pool',
+				Field('Name', 'varchar(20)'))
