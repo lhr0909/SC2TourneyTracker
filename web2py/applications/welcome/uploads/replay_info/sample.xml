@@ -1,0 +1,43 @@
+Sc2gears 8.8.2 Command Line Interface
+-------print-game-info
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gameInfo Sc2gearsVersion="8.8.2" docVersion="1.0">
+<fileName>C:\Users\liangh\Desktop\CSSE 333\project\SC2TourneyTracker\web2py\applications\welcome\static\Sc2gears\sample.SC2Replay</fileName>
+<fileSize>66738</fileSize>
+<version>1.4.2.20141</version>
+<date>2012-01-07 22:39:44</date>
+<recorderTimeZone>-5.00</recorderTimeZone>
+<gameLength>00:07:36</gameLength>
+<gameSpeed>Faster</gameSpeed>
+<gameType>Private</gameType>
+<format>1v1</format>
+<gateway>America</gateway>
+<clients clientsCount="5">Zerg, Akcracker, Eureka, Atheros, Xanthous</clients>
+<mapName>MLG Dual Sight</mapName>
+<mapFile>0d/57/0d57d9d296447cb7eecfbb5e335a1ecff500cbc2470b15ea15e78e1f5462f295.s2ma</mapFile>
+<mapSize height="152" width="176">176x152</mapSize>
+<mapPlayableSize height="120" width="150">150x120</mapPlayableSize>
+<players playersCount="2" teamsCount="2">
+<team team="1">
+<player>
+<name>Akcracker</name>
+<race>Zerg</race>
+<apm>180</apm>
+<eapm>101</eapm>
+<type battleNetId="2395036" fullName="Akcracker/US/1/2395036" gateway="America" region="North America">Human</type>
+<color blue="129" green="0" name="Purple" red="84">Purple (84,0,129)</color>
+</player>
+</team>
+<team team="2">
+<player>
+<name>Zerg</name>
+<race>Protoss</race>
+<apm>149</apm>
+<eapm>87</eapm>
+<type battleNetId="2481630" fullName="Zerg/US/1/2481630" gateway="America" region="North America">Human</type>
+<color blue="14" green="138" name="Orange" red="254">Orange (254,138,14)</color>
+</player>
+</team>
+</players>
+<winners winnersCount="1">Zerg</winners>
+</gameInfo>

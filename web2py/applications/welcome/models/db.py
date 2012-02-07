@@ -85,7 +85,8 @@ db.define_table('Player',
 				Field('LeagueID', 'tinyint'),
 				Field('Rank', 'int'),
 				Field('InGameName', 'varchar(50)'),
-				Field('Auth_User_ID', 'int'))
+				Field('Auth_User_ID', 'int'),
+				Field('BattlenetURL', 'varchar(150)'))
 
 db.define_table('Players_in_Tournament', 
 				Field('PID', 'int'),
