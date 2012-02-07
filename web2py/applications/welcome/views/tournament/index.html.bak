@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h1>Available Tournaments</h1>
+<table>
+<tr><td><h2>Tournaments</h2></td></tr>
+{{for row in tournament:}}<tr><td>{{=A(T(row[0]), _href=URL('welcome','tournament','show'+str(row[1])))}}</td></tr></li>{{pass}}
+</table>
