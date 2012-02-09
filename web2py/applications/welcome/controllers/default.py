@@ -18,6 +18,8 @@ def index():
 	
 	if auth.is_logged_in():
 		playerProfile = db(db.Player.Auth_User_ID==auth.user_id).select()
+	else:
+		playerProfile = None
 	
 	return dict(message=T('Heyo'), profile=playerProfile)
 	#return dict()
