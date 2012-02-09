@@ -15,7 +15,11 @@ def index():
     rendered by views/default/index.html or views/generic.html
 	"""
     #response.flash = "Welcome to Starcraft 2 Custom Tourney Tracker"
-	return dict(message=T('Heyo'))
+	
+	if auth.is_logged_in():
+		playerProfile = db(db.Player.Auth_User_ID==auth.user_id).select()
+	
+	return dict(message=T('Heyo'), profile=playerProfile)
 	#return dict()
 
 def user():

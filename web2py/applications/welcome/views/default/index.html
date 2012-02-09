@@ -19,7 +19,21 @@
 {{pass}}
 
 {{block right_sidebar}}
-{{=T('Player Profile')}}
+{{if auth.is_logged_in():}}
+{{for row in profile:}}
+<p>
+{{=T('In-Game Name: ' + row['InGameName'])}} <br />
+{{=T('Character Code: ' + str(row['CharacterCode']))}} <br />
+{{=T('League: ' + str(db.League[row['LeagueID']]['Name']))}} <br />
+{{=T('Rank: ' + str(row['Rank']))}} <br />
+{{=T('Battle.net Profile: ')}}
+{{=A(T('View'), _href=row['BattlenetURL'], _target='_blank')}}
+</p>
+{{pass}}
+{{else:}}
+{{=T('Player Profile not available, please ')}}
+{{=A(T('Login'), _href=URL('user/login?_next=/' + request.application + '/default/index'))}}
+{{pass}}
 {{end}}
 
 <!--
