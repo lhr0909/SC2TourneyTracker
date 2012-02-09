@@ -1,3 +1,6 @@
 {{extend 'layout.html'}}
 <h1>This is the tournament/show.html template</h1>
 {{=test}}
+<p>
+{{=form}}
+</p>
