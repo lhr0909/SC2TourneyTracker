@@ -19,6 +19,7 @@
 {{pass}}
 
 {{block right_sidebar}}
+<h5>{{=T('Player Profile')}}</h5>
 {{if auth.is_logged_in():}}
 {{for row in profile:}}
 <p>
@@ -27,9 +28,11 @@
 {{=T('League: ' + str(db.League[row['LeagueID']]['Name']))}} <br />
 {{=T('Rank: ' + str(row['Rank']))}} <br />
 {{=T('Battle.net Profile: ')}}
-{{=A(T('View'), _href=row['BattlenetURL'], _target='_blank')}}
+{{=A(T('View'), _href=row['BattlenetURL'], _target='_blank')}} <br />
+{{=A(T('Edit Profile'), _href=URL('profile', 'edit', args=[str(row['id'])]))}}
 </p>
 {{pass}}
+<p>{{=A(T('Create a New Player Profile'), _href=URL('profile', 'create'))}}</p>
 {{else:}}
 {{=T('Player Profile not available, please ')}}
 {{=A(T('Login'), _href=URL('user/login?_next=/' + request.application + '/default/index'))}}
