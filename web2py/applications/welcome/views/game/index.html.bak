@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+<h1>These are the games you need to play</h1>
+<table>
+{{for g in games:}}<tr><td>{{= "vs. " + str(db.executesql("SELECT p.InGameName from Player p, Game_to_Players g WHERE g.GID = " + str(g) + "AND g.PID = p.ID AND g.PID = " +pid))}}</td></tr></li>{{pass}}
+</table>

@@ -10,7 +10,8 @@
   <li>{{=T('You can register an account and create tournaments')}}</li>
   <li>{{=T('The games will be verified via replay uploads')}}</li>
   <li>{{=A(T('Tournament'), _href=URL('tournament', 'index'))}}</li>
-  <li>{{=A(T('View League'), _href=URL('tournament', 'index'))}}</li>
+  <li>{{=A(T('View League'), _href=URL('league', 'index'))}}</li>
+  <li>{{=A(T('Upload a Replay'), _href=URL('replay', 'upload'))}}</li>
 </ul>
 </ol>
 {{else:}}
@@ -18,6 +19,25 @@
 {{pass}}
 
 {{block right_sidebar}}
+{{if auth.is_logged_in():}}
+{{for row in profile:}}
+<p>
+{{=T('In-Game Name: ' + row['InGameName'])}} <br />
+{{=T('Character Code: ' + str(row['CharacterCode']))}} <br />
+{{=T('League: ' + str(db.League[row['LeagueID']]['Name']))}} <br />
+{{=T('Rank: ' + str(row['Rank']))}} <br />
+{{=T('Battle.net Profile: ')}}
+{{=A(T('View'), _href=row['BattlenetURL'], _target='_blank')}}
+</p>
+{{pass}}
+{{else:}}
+{{=T('Player Profile not available, please ')}}
+{{=A(T('Login'), _href=URL('user/login?_next=/' + request.application + '/default/index'))}}
+{{pass}}
+{{end}}
+
+<!--
+{{#block right_sidebar}}
 {{=A(T("Administrative Interface"), _href=URL('admin','default','index'), _class='button',
      _style='margin-top: 1em;')}}
 <h6>{{=T("Don't know what to do?")}}</h6>
@@ -26,4 +46,4 @@
   <li><a href="http://web2py.com">web2py.com</a></li>
   <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
 </ul>
-{{end}}
+{{#end}}-->
