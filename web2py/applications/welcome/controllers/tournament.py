@@ -40,11 +40,24 @@ def create():
                                DIV("Players :", INPUT(_name="players", requires=IS_NOT_EMPTY())),
                                DIV(INPUT(_type='submit',_value='Create')))
     if form.accepts(request,session):
+        
         name = escape_string(str(form.vars['name']))
+<<<<<<< HEAD
         mapPool = escape_string(str(form.vars['mapPool']))
         players = escape_int(form.vars['players'])
         mapPoolID = escape_int(str(db.executesql("SELECT ID FROM Map_pool WHERE Name = " + mapPool)[0][0]))
         
         db.executesql("EXEC [dbo].[create_tournament_sp] " + name + " , " + mapPoolID + ', ' + escape_int(str(auth.user_id)) + ', ' + str(players))
         response.flash = "Tournament Created"
+=======
+        if name.find(";") != -1 or name.find(",") != -1 or name.find("--") != -1 or name.find(" ") != -1 :
+            response.flash = "Invalid Name"
+        else:    
+            mapPool = str(form.vars['mapPool'])
+            players = escape_int(form.vars['players'])
+            mapPoolID = str(db.executesql("SELECT ID FROM Map_pool WHERE Name = '"+mapPool + "'")[0][0])
+        
+            db.executesql("EXEC [dbo].[create_tournament_sp] " + name + " , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + str(players))
+            response.flash = "Tournament Create"
+>>>>>>> 29028e0f4f4dcce1173da1896d9b829e41d81c95
     return dict(form = form)
