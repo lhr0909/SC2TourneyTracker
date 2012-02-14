@@ -7,10 +7,10 @@ def upload():
 	if form.process().accepted:
 		replayID = form.vars.id
 		map, playerIDs, winnerID = parseReplay(db(db.Replay.id == replayID).select()[0]['FileLocation'])
-		if map == db(db.Map.id == db(db.Game.id == gameID).select()[0]['MapID']).select()[0]['Name']:
+		if map == str(db.executesql("SELECT m.Name FROM Map m, Game g WHERE m.id = g.MapID AND g.id = " + gameID)[0][0]):
 			playerCount = 0
-			for record in db(db.Game_to_Players.GID == gameID).select():
-				if record['PID'] not in playerIDs:
+			for record in db.executesql("SELECT * FROM Game_to_Players WHERE GID = " + gameID):
+				if record[1] not in playerIDs:
 					break
 				else:
 					playerCount += 1
