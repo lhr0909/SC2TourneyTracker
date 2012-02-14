@@ -1,5 +1,5 @@
 {{extend 'layout.html'}}
 <h2>These are the games you need to play</h2>
 <table>
-{{for g in games:}}<tr><td>{{= "vs. " + str(db.executesql("SELECT p.InGameName from Player p, Game_to_Players g WHERE g.GID = " + str(g[0]) + " AND g.PID = p.ID AND g.PID = " + pid))}}</td></tr></li>{{pass}}
+{{for g in games:}}<tr><td>{{="vs. " + str(db.executesql("SELECT p.InGameName from Player p, Game_to_Players g WHERE g.GID = " + str(g[0]) + " AND g.PID = p.ID AND g.PID <> " + pid)[0][0])}}</td></tr></li>{{pass}}
 </table>
