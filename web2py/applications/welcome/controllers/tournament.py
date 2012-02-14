@@ -41,10 +41,10 @@ def create():
                                DIV(INPUT(_type='submit',_value='Create')))
     if form.accepts(request,session):
         name = escape_string(str(form.vars['name']))
-        mapPool = escape_string(str(form.vars['mapPool']))
-        players = escape_string(str(form.vars['players']))
+        mapPool = str(form.vars['mapPool'])
+        players = escape_int(form.vars['players'])
         mapPoolID = str(db.executesql("SELECT ID FROM Map_pool WHERE Name = '"+mapPool + "'")[0][0])
         
-        db.executesql("EXEC [dbo].[create_tournament_sp] '" + name + "' , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + players)
+        db.executesql("EXEC [dbo].[create_tournament_sp] " + name + " , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + str(players))
         response.flash = "Tournament Create"
     return dict(form = form)
