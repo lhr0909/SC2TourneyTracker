@@ -1,6 +1,16 @@
 {{extend 'layout.html'}}
-<h1>This is the tournament/show.html template</h1>
-{{=test}}
+<h1>Information for this tournament</h1>
+<table>
+<tr><td><u><h4>Tournament ID</h4></u></td><td><u><h4>Name</h4></u></td><td><u><h4>Map Pool</h4></u></td><td><u><h4>Owner</h4></u></td><td><u><h4>Players</h4></u></td></tr>
+<tr><td>{{=tourny[0][0]}}</td>
+<td>{{=tourny[0][1]}}</td>
+<td>{{=db.executesql("SELECT Name FROM Map_pool WHERE ID = " + str(tourny[0][2]))[0][0]}}</td>
+<td>{{=db.executesql("SELECT first_name FROM auth_user WHERE id = " + str(tourny[0][3]))[0][0] + " " + db.executesql("SELECT last_name FROM auth_user WHERE id = " + str(tourny[0][3]))[0][0]}}</td>
+<td>{{=str(db.executesql("SELECT COUNT(PID) FROM Players_In_Tournament WHERE TID = " + str(tourny[0][0]))[0][0])+ "/" + str(tourny[0][4])}}</td>
+</tr>
+
+</table>
 <p>
 {{=form}}
+{{=v}}
 </p>

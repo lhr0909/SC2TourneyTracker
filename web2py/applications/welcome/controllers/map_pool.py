@@ -1,0 +1,9 @@
+# coding: utf8
+# try something like
+def index():
+    mapPools = db.executesql("SELECT Name, ID from Map_pool")
+    return dict(mapPools=mapPools)
+    
+def show():
+    mapIDs = db.executesql("SELECT Map_ID FROM Map_to_Map_Pool WHERE Pool_ID = " + str(request.args(0)))
+    return dict(mapIDs = mapIDs, poolID = request.args(0))

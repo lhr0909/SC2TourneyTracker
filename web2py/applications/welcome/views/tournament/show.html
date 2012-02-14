@@ -1,7 +1,7 @@
 {{extend 'layout.html'}}
 <h1>Information for this tournament</h1>
 <table>
-<tr><td>Tournament ID</td><td>Name</td><td>Map Pool</td><td>Owner</td><td>Players</td></tr>
+<tr><td><u><h4>Tournament ID</h4></u></td><td><u><h4>Name</h4></u></td><td><u><h4>Map Pool</h4></u></td><td><u><h4>Owner</h4></u></td><td><u><h4>Players</h4></u></td></tr>
 <tr><td>{{=tourny[0][0]}}</td>
 <td>{{=tourny[0][1]}}</td>
 <td>{{=db.executesql("SELECT Name FROM Map_pool WHERE ID = " + str(tourny[0][2]))[0][0]}}</td>

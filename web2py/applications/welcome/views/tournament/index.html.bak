@@ -1,6 +1,7 @@
 {{extend 'layout.html'}}
 <h1>Available Tournaments</h1>
 <table>
-<tr><td><h2>Tournaments</h2></td></tr>
-{{for row in tournament:}}<tr><td>{{=A(T(row[0]), _href=URL('welcome','tournament','show'+str(row[1])))}}</td></tr></li>{{pass}}
+<tr><td><h3><u>Tournament Name</u></h3></td><td><u>Players</u></td></tr>
+{{for row in tournament:}}<tr><td>{{=A(T(row[0]), _href=URL('welcome','tournament','show/'+str(row[1])))}}</td>
+<td>{{=str(db.executesql("SELECT COUNT(PID) FROM Players_In_Tournament WHERE TID = " + str(row[1]))[0][0]) + "/" +str(row[2])}}</tr></li>{{pass}}</td></tr>{{pass}}
 </table>

@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h2>These are the maps in <u>{{=db.executesql("SELECT Name from Map_pool WHERE ID = " + str(poolID))[0][0]}}</u></h2>
+<table>
+<tr><td><u>Map Name</u></td><td><u>Map Type</u></td></tr>
+{{for mapID in mapIDs:}}<tr><td>{{=db.executesql("SELECT Name FROM Map WHERE ID = " + str(mapID[0]))[0][0]}}</td><td>{{=db.executesql("SELECT Type FROM Map WHERE ID = " + str(mapID[0]))[0][0]}}</td></tr>{{pass}}
+</table>

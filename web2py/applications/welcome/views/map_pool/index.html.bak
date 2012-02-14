@@ -1,0 +1,3 @@
+{{extend 'layout.html'}}
+{{for mapPool in mapPools:}}
+<p>{{=A(T(str(mapPool[0])), _href = URL('welcome', 'map_pool', 'show/'+str(mapPool[1])))}}{{pass}}</p>
