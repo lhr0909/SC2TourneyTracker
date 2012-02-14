@@ -1,8 +1,19 @@
 {{extend 'layout.html'}}
 <h2>These are the games you need to play</h2>
 <table>
-
-{{for g in games:}}{{players = db.executesql("SELECT PID FROM Game_to_Players WHERE GID = " + str(g[0]))}}{{=str(db.executesql("SELECT InGameName from Player where ID = " + str(players[0][0]))[0][0])+" vs. " + str(db.executesql("SELECT InGameName from Player where ID = " + str(players[1][0]))[0][0]) + " on " +str(db.executesql("SELECT m.Name FROM MAP m, Game g where g.MapID = M.ID AND g.ID = " + str(g[0]))[0][0])}}
-{{=A(T("    Upload Replay"), _href=URL("replay", "upload", args = str(g[0])))}}
-</br>{{pass}}
+<tr>
+	<td>{{=B('Player 1')}}</td>
+	<td>{{=B('Player 2')}}</td>
+	<td>{{=B('Map')}}</td>
+	<td>{{=B('Status')}}</td>
+</tr>
+	{{for g in games:}}
+	{{players = db.executesql("SELECT PID FROM Game_to_Players WHERE GID = " + str(g[0]))}}
+<tr>
+	<td>{{=str(db.executesql("SELECT InGameName from Player where ID = " + str(players[0][0]))[0][0])}}</td>
+	<td>{{=str(db.executesql("SELECT InGameName from Player where ID = " + str(players[1][0]))[0][0])}}</td>
+	<td>{{=str(db.executesql("SELECT m.Name FROM MAP m, Game g where g.MapID = M.ID AND g.ID = " + str(g[0]))[0][0])}}</td>
+	<td>{{=A(T("Upload Replay"), _href=URL("replay", "upload", args = str(g[0])))}}</td>
+</tr>
+	{{pass}}
 </table>
