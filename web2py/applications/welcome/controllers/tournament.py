@@ -1,9 +1,13 @@
 # coding: utf8
 #
+
+from contrib.pymysql.converters import *
+
 def index(): 
     #db = DAL('mssql://cheungkt:mechanes5@whale.cs.rose-hulman.edu/SC2tracker')
     tournies = db.executesql('SELECT Name, ID, Limit FROM Tournament')
     return dict(tournament = tournies)
+    
 @auth.requires_login()  
 def show():
     tourny = db.executesql('SELECT * FROM Tournament WHERE ID = ' + str(request.args(0)))
@@ -36,9 +40,9 @@ def create():
                                DIV("Players :", INPUT(_name="players", requires=IS_NOT_EMPTY())),
                                DIV(INPUT(_type='submit',_value='Create')))
     if form.accepts(request,session):
-        name = str(form.vars['name'])
-        mapPool = str(form.vars['mapPool'])
-        players = str(form.vars['players'])
+        name = escape_string(str(form.vars['name']))
+        mapPool = escape_string(str(form.vars['mapPool']))
+        players = escape_string(str(form.vars['players']))
         mapPoolID = str(db.executesql("SELECT ID FROM Map_pool WHERE Name = '"+mapPool + "'")[0][0])
         
         db.executesql("EXEC [dbo].[create_tournament_sp] '" + name + "' , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + players)
