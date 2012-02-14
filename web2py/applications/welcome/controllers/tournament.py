@@ -40,11 +40,15 @@ def create():
                                DIV("Players :", INPUT(_name="players", requires=IS_NOT_EMPTY())),
                                DIV(INPUT(_type='submit',_value='Create')))
     if form.accepts(request,session):
-        name = escape_string(str(form.vars['name']))
-        mapPool = str(form.vars['mapPool'])
-        players = escape_int(form.vars['players'])
-        mapPoolID = str(db.executesql("SELECT ID FROM Map_pool WHERE Name = '"+mapPool + "'")[0][0])
         
-        db.executesql("EXEC [dbo].[create_tournament_sp] " + name + " , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + str(players))
-        response.flash = "Tournament Create"
+        name = escape_string(str(form.vars['name']))
+        if name.find(";") != -1 or name.find(",") != -1 or name.find("--") != -1 or name.find(" ") != -1 :
+            response.flash = "Invalid Name"
+        else:    
+            mapPool = str(form.vars['mapPool'])
+            players = escape_int(form.vars['players'])
+            mapPoolID = str(db.executesql("SELECT ID FROM Map_pool WHERE Name = '"+mapPool + "'")[0][0])
+        
+            db.executesql("EXEC [dbo].[create_tournament_sp] " + name + " , " + mapPoolID + ', ' + str(auth.user_id) + ', ' + str(players))
+            response.flash = "Tournament Create"
     return dict(form = form)
