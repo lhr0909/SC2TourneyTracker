@@ -1,8 +1,8 @@
 {{extend 'layout.html'}}
 <h2>These are the games you need to play</h2>
 <table>
-{{for g in games:}}<tr><td>{{="vs. " + str(db.executesql("SELECT p.InGameName from Player p, Game_to_Players g WHERE g.GID = " + str(g[0]) + " AND g.PID = p.ID AND g.PID <> " + pid)[0][0])}}</td>
-<td>{{= "on " + str(db.executesql("SELECT m.Name from Map m, Game g WHERE g.ID = "  + str(g[0]) + " AND g.MapID = m.ID")[0][0])}}</td>
-<td>{{=A(T(" Submit Replay"), _href=URL('replay','upload', args=str(g[0])))}}</td>
-</tr></li>{{pass}}
+
+{{for g in games:}}{{players = db.executesql("SELECT PID FROM Game_to_Players WHERE GID = " + str(g[0]))}}{{=str(db.executesql("SELECT InGameName from Player where ID = " + str(players[0][0]))[0][0])+" vs. " + str(db.executesql("SELECT InGameName from Player where ID = " + str(players[1][0]))[0][0]) + " on " +str(db.executesql("SELECT m.Name FROM MAP m, Game g where g.MapID = M.ID AND g.ID = " + str(g[0]))[0][0])}}
+{{=A(T("    Upload Replay"), _href=URL("replay", "upload", args = str(g[0])))}}
+</br>{{pass}}
 </table>
